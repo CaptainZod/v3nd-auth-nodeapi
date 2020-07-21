@@ -43,7 +43,7 @@ const nexmo = new Nexmo({
 // Here we make acc to get those credentials
 const bcrypt = require('bcrypt');
 const passport = require('passport');
-const flash = require('express-flash');=
+const flash = require('express-flash');
 const methodOverride = require('method-override')
 
 
@@ -67,7 +67,7 @@ passport.use(new GoogleStrategy({
 ));
 
 app.use(flash());
-=
+
 app.use(passport.initialize())
 app.use(methodOverride('_method'))  
 
